@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Dave Cook",
+    "classifications": [ 
+		"Global Tools", 
+		"Console" 
+	],
+    "identity": "Dave.Cook.GlobalToolsTemplate",
+    "name": ".Net Global Tools Template",
+    "shortName": "globaltool",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"symbols": {
+		"skipRestore": {
+		  "type": "parameter",
+		  "datatype": "bool",
+		  "description": "If specified, skips the automatic restore of the project on create.",
+		  "defaultValue": "false"
+		},
+		"command-name": {
+		  "type": "parameter",
+		  "datatype": "text",
+		  "description": "The name of the global command. This is what users will type to invoke this tool once it is installed.",
+		  "defaultValue": "my-tool",
+		  "replaces": "$(CommandName)"
+		}
+	},
+	"sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        ".template.config/**"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>Dave.Cook.GlobalToolsTemplate</id>
+		<version>1.0.0</version>
+		<authors>Dave Cook</authors>
+        <owners>cookie</owners>
+        <projectUrl>https://github.com/cookie1981/.NetGlobalToolsTemplate</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes>Initial Release</releaseNotes>
+        <description>Template for creating .Net Global Tools, including a solution with src and test folders.</description>
+		<language>en-US</language>
+		<copyright>Copyright Dave Cook</copyright>
+		<licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <tags>Templates, Global Tools, CLI, dotnet core</tags>
+		<packageTypes>
+			<packageType name="Template" />
+		</packageTypes>
+    </metadata>
+    <files>
+		<file src="content/**" target="content/" />
+	</files>
+</package>
